@@ -1,0 +1,14 @@
+{
+  "name": "sv-groups-server",
+  "private": true,
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=../.env index.js",
+    "start": "node --env-file-if-exists=../.env index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "nodemailer": "^10.2.1"
+  }
+}
