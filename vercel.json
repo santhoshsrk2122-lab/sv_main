@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/projects.html", "destination": "/projects", "permanent": true },
+    { "source": "/sv-polaris.html", "destination": "/projects/sv-polaris", "permanent": true },
+    { "source": "/sv-grandur.html", "destination": "/projects/sv-grandur", "permanent": true },
+    { "source": "/construction.html", "destination": "/construction", "permanent": true },
+    { "source": "/testimonials.html", "destination": "/testimonials", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
